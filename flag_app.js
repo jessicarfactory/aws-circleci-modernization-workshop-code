@@ -17,9 +17,9 @@ client.once("ready", () => {
     client.variation("your.flag.key", {"key": "user@test.com"}, false,
       (err, showFeature) => {
         if (showFeature) {app.get('/', function (req, res) {
-    var message = "Hello World";
-    res.render("index", {message: welcomeMessage()});
-});} else {
+            var message = "Hello World";
+            res.render("index", {message: welcomeMessage()});
+        });} else {
     // the code to run if the feature is off
     app.get('/', function (req, res) {
         var message = "Goodbye World";
